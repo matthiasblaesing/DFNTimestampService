@@ -1,3 +1,22 @@
+/* Copyright (c) 2019, Matthias Bläsing, All Rights Reserved
+ *
+ * The contents of this file is dual-licensed under 2  alternative Open Source
+ * /Free licenses: LGPL 2.1 or later and Apache License 2.0.
+ *
+ * You can freely decide which license you want to apply to
+ * the project.
+ *
+ * You may obtain a copy of the LGPL License at:
+ *
+ * http://www.gnu.org/licenses/licenses.html
+ *
+ *
+ * You may obtain a copy of the Apache License at:
+ *
+ * http://www.apache.org/licenses/
+ *
+ */
+
 package edu.udo.itmc.dev.blaesing.tsautils;
 
 import java.io.File;
