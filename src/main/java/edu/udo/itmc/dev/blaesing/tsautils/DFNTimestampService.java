@@ -103,6 +103,13 @@ public class DFNTimestampService {
                     anchors.setCertificateEntry("DFN-SERVICES-" + dfnCount, cert);
                 }
             }
+            try (InputStream is = Main.class.getResourceAsStream("/META-INF/dfn-global-issuing-ca.pem")) {
+                int dfnCount = 0;
+                for (Certificate cert : certificateFactory.generateCertificates(is)) {
+                    dfnCount++;
+                    anchors.setCertificateEntry("DFN-GLOBAL_ISSUING-" + dfnCount, cert);
+                }
+            }
 
             BUILT_IN_DFN_ANCHORS = anchors;
         } catch (CertificateException | IOException | KeyStoreException | NoSuchAlgorithmException ex) {
